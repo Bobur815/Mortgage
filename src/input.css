@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.LabelName{
+    @apply text-gray-600 text-2xl
+}
+
+.input-div{
+    @apply flex border border-gray-600 rounded-[6px] overflow-hidden
+}
+
+.icon-div{
+    @apply bg-sky-100 p-4 h-[60px] text-[20px] font-bold
+}

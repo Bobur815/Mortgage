@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-sky-100">
+    <div
+        class="flex shadow-[-6px_6px_22px_5px_rgba(0,_0,_0,_0.1)] overflow-hidden justify-between my-[100px] mx-[150px] bg-white max-w-full min-h-[calc(100vh-200px)] rounded-4xl">
+        <div class=" w-[50%]">
+            <div class="p-[50px] flex flex-col h-full justify-between">
+                <ul class="flex justify-between">
+                    <h1 class="text-4xl font-bold">Mortgage Calculator</h1>
+                    <li><a href="#" class="text-[20px] border-b-1 text-sky-900">Clear All</a></li>
+                </ul>
+
+                <div class="flex flex-col gap-4">
+                    <label for="amount" class="LabelName">Mortgage Amount</label>
+                    <div class="input-div">
+                        <img class="icon-div" src="./images/icons8-pound-sterling-24.png" alt="">
+                        <input class="outline-0 bg-none w-full" type="text" name="amount" id="amount">
+                    </div>
+                </div>
+
+                <div class="flex justify-between gap-10">
+                    <div class="w-[50%] rounded-2xl flex flex-col gap-4">
+                        <label for="term" class="LabelName">Mortgage Term</label>
+                        <div class="input-div">
+                            <input class="outline-0 w-full" type="text" name="term" id="term">
+                            <p class="icon-div">years</p>
+                        </div>
+                    </div>
+
+                    <div class="w-[50%] rounded-2xl flex flex-col gap-4">
+                        <label for="interest" class="LabelName">Interest Rate</label>
+                        <div class="input-div">
+                            <input class="outline-0 w-full" type="" name="interest" id="interest">
+                            <p class="icon-div">%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <label for="type" class="LabelName">Mortgage Type</label>
+                    <label
+                        class="flex items-center border border-gray-500 rounded-[6px] cursor-pointer peer-checked:border-blue-500 h-[60px]">
+                        <input type="radio" name="MortgageType" class="peer hidden" checked>
+                        <span
+                            class="w-6 h-6 border border-gray-400 rounded-full mx-3 flex items-center justify-center peer-checked:border-blue-500">
+                            <span class="w-4 h-4 bg-blue-500 rounded-full peer-checked:block hidden"></span>
+                        </span>
+                        <span class="font-bold text-2xl">Repayment</span>
+                    </label>
+
+                    <label
+                        class="flex items-center border rounded-[6px] border-gray-500 cursor-pointer peer-checked:border-blue-500 h-[60px]">
+                        <input type="radio" name="MortgageType" class="peer hidden">
+                        <span
+                            class="w-6 h-6 border mx-3 border-gray-500 rounded-full flex items-center justify-center peer-checked:border-blue-500">
+                            <span class="w-4 h-4 border-blue-500 rounded-full peer-checked:block hidden"></span>
+                        </span>
+                        <span class="font-bold text-2xl">Interest Only</span>
+                    </label>
+                </div>
+
+                <button class="flex items-center justify-center gap-5  w-2/3 rounded-4xl hover:bg-yellow-500 cursor-pointer bg-lime-300 h-[60px]">
+                    <img src="./images/icon-calculator.svg" alt="">
+                    <p class="text-2xl font-bold">Calculate Repayments</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-sky-950 w-[50%] rounded-bl-[150px] h-auto flex items-center justify-center">
+            <div class="flex flex-col items-center gap-4 text-center">
+                <img src="./images/illustration-empty.svg" alt="" class="w-[280px] h-[400px]">
+                <h1 class="text-4xl text-white font-bold">Results shown here</h1>
+                <p class="text-[20px] text-white">Complete the form and click "Calculate Repayments" to <br> see what your monthly repayments would be</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
